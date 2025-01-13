@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ username }}'s Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+
+    <form method="POST" action="{{ url_for('profile', username=username) }}">
+        <textarea name="text" placeholder="Write something..."></textarea><br>
+        <button type="submit">Post</button>
+    </form>
+
+    <h2>Your Posts</h2>
+    {% for post in posts %}
+        <p>{{ post['text'] }} - {{ post['post_time'] }}</p>
+    {% endfor %}
+
+    <p><a href="{{ url_for('login') }}">Logout</a></p>
+</body>
+</html>

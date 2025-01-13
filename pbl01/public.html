@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Posts</title>
+</head>
+<body>
+    <h1>Public Posts</h1>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <p>{{ post['text'] }}</p>
+                <small>Posted by: {{ post['username'] }} on {{ post['post_time'] }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>

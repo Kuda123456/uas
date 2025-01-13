@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Car</title>
+</head>
+<body>
+    <h1>Edit Car</h1>
+    <form action="{{ url_for('edit', id=car[0]) }}" method="POST">
+        <label for="make">Make:</label>
+        <input type="text" name="make" value="{{ car[1] }}" required><br><br>
+        <label for="model">Model:</label>
+        <input type="text" name="model" value="{{ car[2] }}" required><br><br>
+        <label for="year">Year:</label>
+        <input type="text" name="year" value="{{ car[3] }}" required><br><br>
+        <label for="price">Price:</label>
+        <input type="text" name="price" value="{{ car[4] }}" required><br><br>
+        <button type="submit">Update</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to list</a>
+</body>
+</html>

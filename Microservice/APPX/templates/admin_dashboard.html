@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    
+    <h2>Service Status</h2>
+    <ul>
+        <li>MS1: {{ services["MS1"] }}</li>
+        <li>MS2: {{ services["MS2"] }}</li>
+        <li>MS3: {{ services["MS3"] }}</li>
+    </ul>
+
+    <h2>Input Data</h2>
+    
+    <!-- Filter berdasarkan lokasi -->
+    <form method="POST" action="/admin-dashboard">
+        <label for="location">Select Location:</label>
+        <select name="location" id="location">
+            <option value="">All Locations</option>
+            {% for location in locations %}
+                <option value="{{ location[0] }}">{{ location[0] }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Input Data</th>
+                <th>Location</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for input in inputs %}
+            <tr>
+                <td>{{ input[0] }}</td>
+                <td>{{ input[1] }}</td>
+                <td>{{ input[2] }}</td>
+                <td>{{ input[3] }}</td>
+                <td>{{ input[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="/logout">Logout</a>
+</body>
+</html>

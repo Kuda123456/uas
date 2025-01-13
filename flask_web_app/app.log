@@ -1,0 +1,54 @@
+2025-01-08 11:42:36,341 -  * Debugger is active!
+2025-01-08 11:42:36,346 -  * Debugger PIN: 547-083-735
+2025-01-08 11:42:40,790 - 127.0.0.1 - - [08/Jan/2025 11:42:40] "GET / HTTP/1.1" 200 -
+2025-01-08 11:42:41,899 - 127.0.0.1 - - [08/Jan/2025 11:42:41] "GET /login HTTP/1.1" 200 -
+2025-01-08 11:42:46,330 - 127.0.0.1 - - [08/Jan/2025 11:42:46] "POST /login HTTP/1.1" 200 -
+2025-01-08 11:42:49,659 - 127.0.0.1 - - [08/Jan/2025 11:42:49] "GET /login HTTP/1.1" 200 -
+2025-01-08 11:42:50,721 - 127.0.0.1 - - [08/Jan/2025 11:42:50] "GET / HTTP/1.1" 200 -
+2025-01-08 11:42:51,633 - 127.0.0.1 - - [08/Jan/2025 11:42:51] "GET /register HTTP/1.1" 200 -
+2025-01-08 11:42:57,416 - 26593cfd-db9a-40a1-9134-454155b66535 Sign Up 1 admin 127.0.0.1 PBL01LOGS 08-01-2025 11:42:57
+2025-01-08 11:42:57,416 - 127.0.0.1 - - [08/Jan/2025 11:42:57] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 11:42:57,421 - 127.0.0.1 - - [08/Jan/2025 11:42:57] "GET /welcome?token=eyJ1c2VyX2lkIjoxfQ.Z34CUQ.VdxZsjhSpwM-PLX5fFxijy_sHS4 HTTP/1.1" 200 -
+2025-01-08 11:43:05,600 - ee9ba3cf-cd9d-4fbc-a2f2-17a8dd4394df Sign Up 2 user 127.0.0.1 PBL01LOGS 08-01-2025 11:43:05
+2025-01-08 11:43:05,600 - 127.0.0.1 - - [08/Jan/2025 11:43:05] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 11:43:05,610 - 127.0.0.1 - - [08/Jan/2025 11:43:05] "GET /welcome?token=eyJ1c2VyX2lkIjoyfQ.Z34CWQ.vuZslllAbsXfx-pMH9HITb1_k4w HTTP/1.1" 200 -
+2025-01-08 11:43:07,993 - 127.0.0.1 - - [08/Jan/2025 11:43:07] "GET /login HTTP/1.1" 200 -
+2025-01-08 11:43:12,335 - 183e0488-af26-4131-9188-c58d702797e3 Sign In 1 admin 127.0.0.1 PBL01LOGS 08-01-2025 11:43:12
+2025-01-08 11:43:12,335 - 127.0.0.1 - - [08/Jan/2025 11:43:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 11:43:12,340 - 127.0.0.1 - - [08/Jan/2025 11:43:12] "GET /welcome?token=eyJ1c2VyX2lkIjoxfQ.Z34CYA.6YBeTz-WQYDGaZQ6HzJFQE711A4 HTTP/1.1" 200 -
+2025-01-08 11:43:20,913 - 83d479e0-82dd-4123-85f3-c56da6cf71ec Sign In 2 user 127.0.0.1 PBL01LOGS 08-01-2025 11:43:20
+2025-01-08 11:43:20,913 - 127.0.0.1 - - [08/Jan/2025 11:43:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 11:43:20,918 - 127.0.0.1 - - [08/Jan/2025 11:43:20] "GET /welcome?token=eyJ1c2VyX2lkIjoyfQ.Z34CaA.eg5vkcNGDhQpatnUrYAIal7nrJA HTTP/1.1" 200 -
+2025-01-08 11:43:24,959 - 127.0.0.1 - - [08/Jan/2025 11:43:24] "GET / HTTP/1.1" 200 -
+2025-01-08 11:43:26,086 - 127.0.0.1 - - [08/Jan/2025 11:43:26] "GET /register HTTP/1.1" 200 -
+2025-01-08 11:43:35,451 - d8be5959-9dfb-4950-953c-cbb9e9f3bf23 Sign Up 3 admin 127.0.0.1 PBL01LOGS 08-01-2025 11:43:35
+2025-01-08 11:43:35,451 - 127.0.0.1 - - [08/Jan/2025 11:43:35] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 11:43:35,456 - 127.0.0.1 - - [08/Jan/2025 11:43:35] "GET /welcome?token=eyJ1c2VyX2lkIjozfQ.Z34Cdw.FjMGEUzXk5XqlHE3qBuusMg602Q HTTP/1.1" 200 -
+2025-01-08 11:43:39,438 - 127.0.0.1 - - [08/Jan/2025 11:43:39] "GET /login HTTP/1.1" 200 -
+2025-01-08 11:43:45,167 - 9ec32654-a5f8-4506-924a-d0aa8f92cbb6 Sign In 3 admin 127.0.0.1 PBL01LOGS 08-01-2025 11:43:45
+2025-01-08 11:43:45,167 - 127.0.0.1 - - [08/Jan/2025 11:43:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 11:43:45,173 - 127.0.0.1 - - [08/Jan/2025 11:43:45] "GET /welcome?token=eyJ1c2VyX2lkIjozfQ.Z34CgQ.lw6drnYe7-rwZayc-6r_rPCLCoY HTTP/1.1" 200 -
+2025-01-08 11:43:57,660 -  * Detected change in 'C:\\Users\\akhda\\Documents\\flask_web_app\\app.py', reloading
+2025-01-08 11:43:57,660 -  * Detected change in 'C:\\Users\\akhda\\Documents\\flask_web_app\\app.py', reloading
+2025-01-08 11:43:57,661 -  * Detected change in 'C:\\Users\\akhda\\Documents\\flask_web_app\\app.py', reloading
+2025-01-08 11:44:31,350 -  * Debugger is active!
+2025-01-08 11:44:31,355 -  * Debugger PIN: 547-083-735
+2025-01-08 11:44:49,140 - 127.0.0.1 - - [08/Jan/2025 11:44:49] "POST /login HTTP/1.1" 200 -
+2025-01-08 11:44:50,654 - 127.0.0.1 - - [08/Jan/2025 11:44:50] "GET /login HTTP/1.1" 200 -
+2025-01-08 11:44:52,186 - 127.0.0.1 - - [08/Jan/2025 11:44:52] "GET / HTTP/1.1" 200 -
+2025-01-08 11:44:53,589 - 127.0.0.1 - - [08/Jan/2025 11:44:53] "GET /login HTTP/1.1" 200 -
+2025-01-08 11:44:54,546 - 127.0.0.1 - - [08/Jan/2025 11:44:54] "GET / HTTP/1.1" 200 -
+2025-01-08 11:44:55,207 - 127.0.0.1 - - [08/Jan/2025 11:44:55] "GET /register HTTP/1.1" 200 -
+2025-01-08 11:45:02,061 - 1b173819-ec7b-429d-9cd5-732c89cac94d Sign Up 1 admin 127.0.0.1 PBL01LOGS 08-01-2025 11:45:02
+2025-01-08 11:45:02,061 - 127.0.0.1 - - [08/Jan/2025 11:45:02] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 11:45:02,071 - 127.0.0.1 - - [08/Jan/2025 11:45:02] "GET /welcome?token=eyJ1c2VyX2lkIjoxfQ.Z34Czg.p64M6XyPKK-vBid5PNaF0u9C9lg HTTP/1.1" 200 -
+2025-01-08 11:45:09,042 - 4b89bcdf-06f5-4629-ac85-961157ce4edb Sign Up 2 user 127.0.0.1 PBL01LOGS 08-01-2025 11:45:09
+2025-01-08 11:45:09,042 - 127.0.0.1 - - [08/Jan/2025 11:45:09] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 11:45:09,046 - 127.0.0.1 - - [08/Jan/2025 11:45:09] "GET /welcome?token=eyJ1c2VyX2lkIjoyfQ.Z34C1Q.VrNERDDESlJnBYB3ezyE-gGTDkw HTTP/1.1" 200 -
+2025-01-08 11:45:11,250 - 127.0.0.1 - - [08/Jan/2025 11:45:11] "GET /login HTTP/1.1" 200 -
+2025-01-08 11:45:16,709 - 83fa5f07-862d-4abc-a4b1-c2261268f00f Sign In 1 admin 127.0.0.1 PBL01LOGS 08-01-2025 11:45:16
+2025-01-08 11:45:16,709 - 127.0.0.1 - - [08/Jan/2025 11:45:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 11:45:16,715 - 127.0.0.1 - - [08/Jan/2025 11:45:16] "GET /admin_dashboard?token=eyJ1c2VyX2lkIjoxfQ.Z34C3A.Jff9Pt9XnSWGp158nQ3Y1EFrCuw HTTP/1.1" 200 -
+2025-01-08 11:47:06,093 -  * Detected change in 'C:\\Users\\akhda\\Documents\\flask_web_app\\app.py', reloading
+2025-01-08 11:47:06,094 -  * Detected change in 'C:\\Users\\akhda\\Documents\\flask_web_app\\app.py', reloading
+2025-01-08 11:47:06,094 -  * Detected change in 'C:\\Users\\akhda\\Documents\\flask_web_app\\app.py', reloading

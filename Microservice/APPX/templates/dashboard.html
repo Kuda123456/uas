@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    
+    <!-- Filter Input by Location -->
+    <h2>Filter by Location</h2>
+<form method="POST">
+    <select name="location">
+        <option value="">All Locations</option> <!-- Pastikan value kosong -->
+        {% for location in locations %}
+            <option value="{{ location[0] }}" {% if request.form.get('location') == location[0] %}selected{% endif %}>
+                {{ location[0] }}
+            </option>
+        {% endfor %}
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+    <!-- Daftar User -->
+    <h3>Daftar User:</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Role</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[3] }}</td>
+                    <td>
+                        <form action="{{ url_for('delete_user', user_id=user[0]) }}" method="POST" style="display:inline;">
+                            <button type="submit" onclick="return confirm('Hapus user ini?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Data Input -->
+    <h3>Data Input:</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Input Data</th>
+                <th>Location</th>
+                <th>Timestamp</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for input in inputs %}
+                <tr>
+                    <td>{{ input[0] }}</td>
+                    <td>{{ input[1] }}</td>
+                    <td>{{ input[2] }}</td>
+                    <td>{{ input[3] }}</td>
+                    <td>{{ input[4] }}</td>
+                    <td>
+                        <form action="{{ url_for('delete_input', input_id=input[0]) }}" method="POST" style="display:inline;">
+                            <button type="submit" onclick="return confirm('Hapus data input ini?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <br><a href="/logout">Logout</a>
+</body>
+</html>
